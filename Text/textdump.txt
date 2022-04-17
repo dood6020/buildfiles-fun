@@ -2208,10 +2208,10 @@ Lord[X]
 Great Lord[X]
 
 # 0x02C1
-Cavalier[X]
+Free Knight[X]
 
 # 0x02C2
-Paladin[.][X]
+Ranger[X]
 
 # 0x02C3
 Knight[X]
@@ -2268,10 +2268,10 @@ Mage Knight[.][X]
 Bishop[X]
 
 # 0x02D5
-Nomad[.][X]
+Lance Knight[X]
 
 # 0x02D6
-Nmd Trooper[.][X]
+Duke Knight[X]
 
 # 0x02D7
 Manakete[X]
