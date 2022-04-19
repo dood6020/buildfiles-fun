@@ -43,11 +43,12 @@ cmp r0, #0
 beq End
 @if user has Astra, check for proc rate
 
-ldrb r0, [r4, #0x15] @speed stat as activation rate
-mov r1, r4 @skill user
-blh d100Result
-cmp r0, #1
-bne End
+mov r2,#0x5E
+ldrb r0, [r4, r2]
+ldrb r1, [r5, r2] @currhp
+sub r0,r0,#2
+cmp r1, r0
+bgt End
 
 
 @astra effect starts here
@@ -55,7 +56,6 @@ bne End
 @write the damage, since we're skipping ahead
 mov     r2, #4
 ldrsh   r3, [r7, r2]
-asr     r3, #1 @damage halved
 strh    r3, [r7, #4]
 
 @ lsl     r3, #0x18
@@ -76,13 +76,31 @@ ldrb    r0, AstraID
 strb    r0,[r6,#4] @save the thing
 
 @now add the number of rounds - 
+mov r2,#0x5E
+ldrb r0, [r4, r2]
+ldrb r1, [r5, r2] @currhp
+sub  r0, r0, r1
+mov r2,#0x5
+cmp r0, r2
+bgt threespeedtwo
+mov r2,#0x3
+cmp r0, r2
+bgt fourspeedtwo
+b End
+fourspeedtwo:
+mov r3, #0x1
+b addroundtwo
+threespeedtwo:
+mov r3, #0x2
+addroundtwo:
 mov r1, #0x38
 mov r2, sp
 ldr r0, [r2,r1] @location of number of rounds on the stack... hopefully
-add r0, #4
+add r0, r0, r3
 str r0, [r2,r1]
 
 @HERE'S THE TRICKY BIT: UPDATE A NEW ROUND OF BATTLE AND SET THE OFFENSIVE SKILL FLAG
+mov r3, r4
 mov r4, r6
 
 add r4, #8 @next round
@@ -90,7 +108,24 @@ mov r0, #0
 str     r0,[r4]                @ 0802B43A 6018 
 ldrb    r0, AstraID
 strb    r0,[r4,#4] @save the thing
-mov     r0, #4 @number of extra attacks
+mov r2,#0x5E
+ldrb r0, [r3, r2]
+ldrb r1, [r5, r2] @currhp
+sub  r0, r0, r1
+mov r2,#0x5
+cmp r0, r2
+bgt threespeed
+mov r2,#0x3
+cmp r0, r2
+bgt fourspeed
+b End
+fourspeed:
+mov r3, #0x1
+b addround
+threespeed:
+mov r3, #0x2
+addround:
+mov     r0, r3
 strb    r0,[r4,#6]
 b End
 
@@ -100,7 +135,6 @@ AlreadyAstra:
 @write the damage, since we're skipping ahead
 mov     r2, #4
 ldrsh   r3, [r7, r2]
-asr     r3, #1 @damage halved
 strh    r3, [r7, #4]
 
 ldrb    r0,[r6,#6] @attacks remaining

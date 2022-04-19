@@ -36,14 +36,33 @@
 #define MonsterAnim(Animation) "BYTE 0x0B 0x01 ; SHORT Animation"
 #define SpecialAnim(Animation,Weapon) "BYTE Weapon 0x00 ; SHORT Animation"
 #define EndAnim "WORD 0x0 0x0"
-
+{
 #include "KnightLord\Sword Installer.event"
 #include "KnightLord\Lance Installer.event"
 #include "KnightLord\Unarmed Installer.event"
+}
+{
+#include "Cavalier\Sword Installer.event"
+#include "Cavalier\Lance Installer.event"
+#include "Cavalier\Unarmed Installer.event"
+#include "Cavalier\Axe Installer.event"
+#include "Cavalier\Bow Installer.event"
+#include "Cavalier\Handaxe Installer.event"
+}
 
 ALIGN 4
 KnightLordAnim:
 SwordAnim(0x05)
 LanceAnim(0x06)
 UnarmedAnim(0x07)
+EndAnim
+
+ALIGN 4
+CavalierAnim:
+SwordAnim(0x34)
+LanceAnim(0x35)
+AxeAnim(0x36)
+BowAnim(0x37)
+SpecialAnim(0x38, HandAxe)
+UnarmedAnim(0x39)
 EndAnim

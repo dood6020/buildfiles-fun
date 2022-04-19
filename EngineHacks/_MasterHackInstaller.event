@@ -6,6 +6,7 @@
 
 #include "Extensions/Hack Installation.txt"
 #include "Necessary/PopupRework/Extensions/PopupDefinitions.txt"
+#include "FixedAutolevels.event"
 
 // hack configuration file
 #include "Config.event"
@@ -161,6 +162,9 @@ POP
   //Reaver Split
   ALIGN 4
   #include "ExternalHacks/ReaverSplit/ReaverSplit.event"
+
+  //Hand Axe fix
+  #include "FE4R/handaxs_wildcard/Installer.event"
   
   //Cannot Crit
   ALIGN 4

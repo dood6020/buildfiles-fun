@@ -1,0 +1,95 @@
+//Generated - do not edit
+//Copy paste the /* */ section into your definitions if desired.
+//Please copy the SetSMS and SetMMS section to change SMS size and MMS AP. 
+ 
+ 
+ 
+/* 
+//First free SMS is 107
+#define Cavalier_M_Lance_SALVAGEDstand 107 
+#define Cavalier_M_Sword_SALVAGEDstand 108 
+#define General_U_Shield_Lance_Nuramonstand 109 
+#define Knight_Lord_M_Eliwood_Sword_ISstand 110 
+#define Knight_U_Lance_SALVAGEDstand 111 
+ 
+ 
+//First free MMS is 127 and will show up if you've expanded classes.
+#define Cavalier_M_Lance_SALVAGEDwalk 127 
+#define Cavalier_M_Sword_SALVAGEDwalk 128 
+#define General_U_Shield_Lance_Nuramonwalk 129 
+#define Knight_Lord_M_Eliwood_Sword_ISwalk 130 
+#define Knight_U_Lance_SALVAGEDwalk 131 
+ 
+*/ 
+ 
+ 
+ 
+/* 
+//Copy from here 
+PUSH 
+ 
+SetSMS(Cavalier_M_Lance_SALVAGEDstand, 1, Cavalier_M_Lance_SALVAGEDstand_Data) 
+SetSMS(Cavalier_M_Sword_SALVAGEDstand, 1, Cavalier_M_Sword_SALVAGEDstand_Data) 
+SetSMS(General_U_Shield_Lance_Nuramonstand, 1, General_U_Shield_Lance_Nuramonstand_Data) 
+SetSMS(Knight_Lord_M_Eliwood_Sword_ISstand, 1, Knight_Lord_M_Eliwood_Sword_ISstand_Data) 
+SetSMS(Knight_U_Lance_SALVAGEDstand, 1, Knight_U_Lance_SALVAGEDstand_Data) 
+ 
+ 
+SetMMS(Cavalier_M_Lance_SALVAGEDwalk, Cavalier_M_Lance_SALVAGEDwalk_Data, DemonKingAP) 
+SetMMS(Cavalier_M_Sword_SALVAGEDwalk, Cavalier_M_Sword_SALVAGEDwalk_Data, DemonKingAP) 
+SetMMS(General_U_Shield_Lance_Nuramonwalk, General_U_Shield_Lance_Nuramonwalk_Data, DemonKingAP) 
+SetMMS(Knight_Lord_M_Eliwood_Sword_ISwalk, Knight_Lord_M_Eliwood_Sword_ISwalk_Data, DemonKingAP) 
+SetMMS(Knight_U_Lance_SALVAGEDwalk, Knight_U_Lance_SALVAGEDwalk_Data, DemonKingAP) 
+ 
+POP 
+//Copy until here 
+*/ 
+ 
+ 
+//SMS Image Data 
+ 
+ALIGN 4 
+Cavalier_M_Lance_SALVAGEDstand_Data: 
+#incbin "dmp/Cavalier_M_Lance_SALVAGEDstand.dmp" 
+ 
+ALIGN 4 
+Cavalier_M_Sword_SALVAGEDstand_Data: 
+#incbin "dmp/Cavalier_M_Sword_SALVAGEDstand.dmp" 
+ 
+ALIGN 4 
+General_U_Shield_Lance_Nuramonstand_Data: 
+#incbin "dmp/General_U_Shield_Lance_Nuramonstand.dmp" 
+ 
+ALIGN 4 
+Knight_Lord_M_Eliwood_Sword_ISstand_Data: 
+#incbin "dmp/Knight_Lord_M_Eliwood_Sword_ISstand.dmp" 
+ 
+ALIGN 4 
+Knight_U_Lance_SALVAGEDstand_Data: 
+#incbin "dmp/Knight_U_Lance_SALVAGEDstand.dmp" 
+ 
+ 
+ 
+ 
+//MMS Image Data 
+ 
+ALIGN 4 
+Cavalier_M_Lance_SALVAGEDwalk_Data: 
+#incbin "dmp/Cavalier_M_Lance_SALVAGEDwalk.dmp" 
+ 
+ALIGN 4 
+Cavalier_M_Sword_SALVAGEDwalk_Data: 
+#incbin "dmp/Cavalier_M_Sword_SALVAGEDwalk.dmp" 
+ 
+ALIGN 4 
+General_U_Shield_Lance_Nuramonwalk_Data: 
+#incbin "dmp/General_U_Shield_Lance_Nuramonwalk.dmp" 
+ 
+ALIGN 4 
+Knight_Lord_M_Eliwood_Sword_ISwalk_Data: 
+#incbin "dmp/Knight_Lord_M_Eliwood_Sword_ISwalk.dmp" 
+ 
+ALIGN 4 
+Knight_U_Lance_SALVAGEDwalk_Data: 
+#incbin "dmp/Knight_U_Lance_SALVAGEDwalk.dmp" 
+ 

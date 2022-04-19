@@ -37,6 +37,12 @@ POIN SkillTester
 WORD CritUpID
 
 ALIGN 4
+AstraTwoSkill:
+#incbin "AstraTwo/AstraTwo.dmp"
+POIN SkillTester
+WORD AstraID
+
+ALIGN 4
 Deadeye:
 #incbin "Deadeye/Deadeye.dmp"
 POIN SkillTester

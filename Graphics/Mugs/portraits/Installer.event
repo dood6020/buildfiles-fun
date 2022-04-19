@@ -4,21 +4,12 @@
 #endif
 
     {
-        __mx_mug(GaryPointMug, __mug_dmp)
-        #incbin "GaryPoint.pos.dmp"
+        __mx_mug(SigurdMug, __mug_dmp)
+        #incbin "Sigurd.pos.dmp"
         BYTE 1 0 0 0; POP;
         align 4
         __mug_dmp:
-            #incbin "GaryPoint.dmp"
-    }
-
-    {
-        __mx_mug(RosheaMug, __mug_dmp)
-        #incbin "Roshea.pos.dmp"
-        BYTE 1 0 0 0; POP;
-        align 4
-        __mug_dmp:
-            #incbin "Roshea.dmp"
+            #incbin "Sigurd.dmp"
     }
 
 }

@@ -33,11 +33,11 @@ cmp r0, #0
 beq End
 @if user has sure shot, check for proc rate
 
-ldrb r0, [r4, #0x15] @skill stat as activation rate
-mov r1, r4 @skill user
-blh d100Result
-cmp r0, #1
-bne End
+ldrb r0, [r4, #0x12]
+ldrb r1, [r4, #0x13]
+lsr r0, #1 
+cmp r0, r1
+ble End
 
 @if we proc, set the offensive skill flag
 ldr     r2,[r6]    
@@ -73,8 +73,9 @@ beq	noOoze
 noOoze:
 mov   r2, #0x5
 ldsb	r2,[r6,r2]	@hp change
+lsr r1,r1,#0x1
 add   r2, r1
-strb	r2,[r6,#5]	@hp change
+strb    r2,[r6,#5]    @hp change
 
 
 End:

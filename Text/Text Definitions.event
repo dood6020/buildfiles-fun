@@ -424,6 +424,5 @@
 #define EirikaDislike2ID $EA0
 #define EirikaAgeID $EA1
 #define EirikaHeightID $EA2
-#define Free $2C1
 
 #endif // TEXT_DEFINITIONS_TEXT_BUILDFILE_TXT

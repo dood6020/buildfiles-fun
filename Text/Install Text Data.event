@@ -1698,8 +1698,40 @@ __TEXTPROCESSEA2:
 setText($EA2, __TEXTPROCESSEA2)
 
 __TEXTPROCESS2C1:
-#incext ParseFile ".TextEntries\text_buildfileFree.fetxt"
+#incext ParseFile ".TextEntries\text_buildfile2C1.fetxt"
 setText($2C1, __TEXTPROCESS2C1)
+
+__TEXTPROCESS2C2:
+#incext ParseFile ".TextEntries\text_buildfile2C2.fetxt"
+setText($2C2, __TEXTPROCESS2C2)
+
+__TEXTPROCESS2D5:
+#incext ParseFile ".TextEntries\text_buildfile2D5.fetxt"
+setText($2D5, __TEXTPROCESS2D5)
+
+__TEXTPROCESS2D6:
+#incext ParseFile ".TextEntries\text_buildfile2D6.fetxt"
+setText($2D6, __TEXTPROCESS2D6)
+
+__TEXTPROCESS2C3:
+#incext ParseFile ".TextEntries\text_buildfile2C3.fetxt"
+setText($2C3, __TEXTPROCESS2C3)
+
+__TEXTPROCESS30D:
+#incext ParseFile ".TextEntries\text_buildfile30D.fetxt"
+setText($30D, __TEXTPROCESS30D)
+
+__TEXTPROCESS321:
+#incext ParseFile ".TextEntries\text_buildfile321.fetxt"
+setText($321, __TEXTPROCESS321)
+
+__TEXTPROCESS30E:
+#incext ParseFile ".TextEntries\text_buildfile30E.fetxt"
+setText($30E, __TEXTPROCESS30E)
+
+__TEXTPROCESS322:
+#incext ParseFile ".TextEntries\text_buildfile322.fetxt"
+setText($322, __TEXTPROCESS322)
 
 }
 

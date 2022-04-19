@@ -51,12 +51,12 @@
 0x31 Forrest Knight (F) w/ Sword
 0x32 Forrest Knight (F) w/ Bow
 0x33 Forrest Knight (F) Disarmed
-0x34 Socialknight w/ Sword
-0x35 Socialknight w/ Spear
-0x36 Socialknight Disarmed
-0x37 Socialknight (F)
-0x38 Socialknight (F)
-0x39 Socialknight (F) Disarmed
+0x34 Cavalier w/ Sword
+0x35 Cavalier w/ Spear
+0x36 Cavalier w/Axe
+0x37 Cavalier w/Bow
+0x38 Cavalier w/Handaxe
+0x39 Cavalier Disarmed
 0x3A Paladin w/ Sword
 0x3B Paladin w/ Spear
 0x3C Paladin Disarmed

@@ -120,6 +120,49 @@ a skill when used.[X]
 
 #include "unitinfo_text.txt"
 
-#0x2c1 Free
+#0x2c1 
 Free Knight [X]
+
+#0x2c2^ 
+Forrest Knight [X]
+
+#0x2d5 
+Lance Knight [X]
+
+#0x2d6 
+Duke Knight [X]
+
+#0x2c3 
+Armor Knight [X]
+
+#0x30d
+Mounted knights with swift movement. [N]
+Equip: [SwordIcon] [X]
+
+#0x321
+Mounted knights with swift movement. [N]
+Equip: [LanceIcon] [X]
+
+#0x30e
+Mounted knights with superior [N]
+abilities. Equip: [SwordIcon] [X]
+
+#0x322
+Mounted knights with superior [N]
+abilities. Equip: [LanceIcon] [X]
+
+#0x30f
+Heavily armored knights with poor [N]
+movement. Equip: [SwordIcon] [LanceIcon] [AxeIcon] [BowIcon] [X]
+
+#0x310
+Veteran knights with great defense [N]
+and skill. Equip: [SwordIcon] [LanceIcon] [AxeIcon] [BowIcon] [X]
+
+
+
+
+
+
+
 

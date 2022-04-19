@@ -1,0 +1,42 @@
+
+
+#include "Internals.event"
+#include "GeneratedInstaller.event"
+
+//First free SMS is 107
+#define Cavalier_M_Lance_SALVAGEDstand 107 
+#define Cavalier_M_Sword_SALVAGEDstand 4 
+#define General_U_Shield_Lance_Nuramonstand 7 
+#define Knight_Lord_M_Eliwood_Sword_ISstand 2 
+#define Knight_U_Lance_SALVAGEDstand 6
+ 
+ 
+//First free MMS is 127 and will show up if you've expanded classes.
+#define Cavalier_M_Lance_SALVAGEDwalk 5
+#define Cavalier_M_Sword_SALVAGEDwalk 4
+#define General_U_Shield_Lance_Nuramonwalk 11 
+#define Knight_Lord_M_Eliwood_Sword_ISwalk 2
+#define Knight_U_Lance_SALVAGEDwalk 9 
+
+//Copy from here 
+PUSH 
+ 
+SetSMS(Cavalier_M_Lance_SALVAGEDstand, 1, Cavalier_M_Lance_SALVAGEDstand_Data) 
+SetSMS(Cavalier_M_Sword_SALVAGEDstand, 1, Cavalier_M_Sword_SALVAGEDstand_Data) 
+SetSMS(General_U_Shield_Lance_Nuramonstand, 1, General_U_Shield_Lance_Nuramonstand_Data) 
+SetSMS(Knight_Lord_M_Eliwood_Sword_ISstand, 1, Knight_Lord_M_Eliwood_Sword_ISstand_Data) 
+SetSMS(Knight_U_Lance_SALVAGEDstand, 1, Knight_U_Lance_SALVAGEDstand_Data) 
+ 
+ 
+SetMMS(Cavalier_M_Lance_SALVAGEDwalk, Cavalier_M_Lance_SALVAGEDwalk_Data, NormalAP) 
+SetMMS(Cavalier_M_Sword_SALVAGEDwalk, Cavalier_M_Sword_SALVAGEDwalk_Data, NormalAP) 
+SetMMS(General_U_Shield_Lance_Nuramonwalk, General_U_Shield_Lance_Nuramonwalk_Data, GeneralAP) 
+SetMMS(Knight_Lord_M_Eliwood_Sword_ISwalk, Knight_Lord_M_Eliwood_Sword_ISwalk_Data, NormalAP) 
+SetMMS(Knight_U_Lance_SALVAGEDwalk, Knight_U_Lance_SALVAGEDwalk_Data, NormalAP) 
+ 
+POP 
+//Copy until here 
+
+
+
+

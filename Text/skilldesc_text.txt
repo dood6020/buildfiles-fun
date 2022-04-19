@@ -57,23 +57,22 @@ Bane: Leave the opponent at 1 HP.[N]
 (Skill/2 % activation)[X]
 
 ## SD_Luna
-Luna: Halves enemy defenses.[N]
+Luna: Halves enemy defenses [N]
 when enemy is at full hp.[X]
 
 ## SD_Sol
-Sol: Restore half of damage dealt [N]
-as HP when under 50% HP [X]
+Sol: Restore half of damage [N]
+dealt as HP when under 50% HP. [X]
 
 ## SD_Aether
 Aether: First strike absorbs HP,[N]
 second strike negates defenses.[N]
 (Skill/2 % activation)[X]
 
-## SD_Astra
-Astra: a [N]
-b [X]
-
-
+## SD_Astra^
+Astra: Doubling threshold halved. During combat, [N]
+if unit has 4 AS > enemy AS, unit gets 4 attacks; [N]
+if 6 AS > enemy AS, unit gets 6 attacks. [X]
 
 ## SD_Discipline
 Discipline: Weapon experience[N]

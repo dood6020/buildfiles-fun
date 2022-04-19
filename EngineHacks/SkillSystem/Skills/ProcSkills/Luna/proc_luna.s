@@ -32,11 +32,11 @@ cmp r0, #0
 beq End
 @if user has sure shot, check for proc rate
 
-ldrb r0, [r4, #0x15] @skill stat as activation rate
-mov r1, r4 @skill user
-blh d100Result
-cmp r0, #1
-bne End
+@under 50% hp
+ldrb r0, [r5, #0x12]
+ldrb r1, [r5, #0x13] @currhp
+cmp r1, r0
+bgt End
 
 @if we proc, set the offensive skill flag
 ldr     r2,[r6]    
@@ -55,6 +55,9 @@ strb  r0, [r6,#4]
 
 @and recalculate damage with def=0
 ldrh r0, [r7, #6] @final mt
+ldrh r1, [r7,#8] @enemy def
+lsr r1, #1 @/2
+sub r0, r1
 ldr r2, [r6]
 mov r1, #1
 tst r1, r2

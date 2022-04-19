@@ -1,7 +1,7 @@
 //Characters
-#define Eirika 0x01
+#define Lord 0x01
 #define Seth 0x02
-#define Gilliam 0x03
+#define Armor 0x03
 #define Franz 0x04
 #define Moulder 0x05
 #define Vanessa 0x06
@@ -105,9 +105,9 @@
 //Classes
 #define EphraimLord 0x01
 #define EirikaLord 0x02
-#define EphraimMasterLord 0x03
+#define KnightLord 0x03
 #define EirikaMasterLord 0x04
-#define Cavalier 0x05
+#define FreeKnight 0x05
 #define Cavalier_F 0x06
 #define Paladin 0x07
 #define Paladin_F 0x08
