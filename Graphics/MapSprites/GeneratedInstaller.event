@@ -30,7 +30,7 @@ PUSH
  
 SetSMS(Cavalier_M_Lance_SALVAGEDstand, 1, Cavalier_M_Lance_SALVAGEDstand_Data) 
 SetSMS(Cavalier_M_Sword_SALVAGEDstand, 1, Cavalier_M_Sword_SALVAGEDstand_Data) 
-SetSMS(General_U_Shield_Lance_Nuramonstand, 1, General_U_Shield_Lance_Nuramonstand_Data) 
+SetSMS(General_U_Shield_Lance_Nuramonstand, 2, General_U_Shield_Lance_Nuramonstand_Data) 
 SetSMS(Knight_Lord_M_Eliwood_Sword_ISstand, 1, Knight_Lord_M_Eliwood_Sword_ISstand_Data) 
 SetSMS(Knight_U_Lance_SALVAGEDstand, 1, Knight_U_Lance_SALVAGEDstand_Data) 
  
