@@ -9,7 +9,7 @@
 #define Cavalier_M_Lance_SALVAGEDstand 107 
 #define Cavalier_M_Sword_SALVAGEDstand 108 
 #define General_U_Shield_Lance_Nuramonstand 109 
-#define Knight_Lord_M_Eliwood_Sword_ISstand 110 
+#define KnightLord_M_Sword_Pushwallstand 110 
 #define Knight_U_Lance_SALVAGEDstand 111 
  
  
@@ -17,7 +17,7 @@
 #define Cavalier_M_Lance_SALVAGEDwalk 127 
 #define Cavalier_M_Sword_SALVAGEDwalk 128 
 #define General_U_Shield_Lance_Nuramonwalk 129 
-#define Knight_Lord_M_Eliwood_Sword_ISwalk 130 
+#define KnightLord_M_Sword_Pushwallwalk 130 
 #define Knight_U_Lance_SALVAGEDwalk 131 
  
 */ 
@@ -30,15 +30,15 @@ PUSH
  
 SetSMS(Cavalier_M_Lance_SALVAGEDstand, 1, Cavalier_M_Lance_SALVAGEDstand_Data) 
 SetSMS(Cavalier_M_Sword_SALVAGEDstand, 1, Cavalier_M_Sword_SALVAGEDstand_Data) 
-SetSMS(General_U_Shield_Lance_Nuramonstand, 2, General_U_Shield_Lance_Nuramonstand_Data) 
-SetSMS(Knight_Lord_M_Eliwood_Sword_ISstand, 1, Knight_Lord_M_Eliwood_Sword_ISstand_Data) 
+SetSMS(General_U_Shield_Lance_Nuramonstand, 1, General_U_Shield_Lance_Nuramonstand_Data) 
+SetSMS(KnightLord_M_Sword_Pushwallstand, 1, KnightLord_M_Sword_Pushwallstand_Data) 
 SetSMS(Knight_U_Lance_SALVAGEDstand, 1, Knight_U_Lance_SALVAGEDstand_Data) 
  
  
 SetMMS(Cavalier_M_Lance_SALVAGEDwalk, Cavalier_M_Lance_SALVAGEDwalk_Data, DemonKingAP) 
 SetMMS(Cavalier_M_Sword_SALVAGEDwalk, Cavalier_M_Sword_SALVAGEDwalk_Data, DemonKingAP) 
 SetMMS(General_U_Shield_Lance_Nuramonwalk, General_U_Shield_Lance_Nuramonwalk_Data, DemonKingAP) 
-SetMMS(Knight_Lord_M_Eliwood_Sword_ISwalk, Knight_Lord_M_Eliwood_Sword_ISwalk_Data, DemonKingAP) 
+SetMMS(KnightLord_M_Sword_Pushwallwalk, KnightLord_M_Sword_Pushwallwalk_Data, DemonKingAP) 
 SetMMS(Knight_U_Lance_SALVAGEDwalk, Knight_U_Lance_SALVAGEDwalk_Data, DemonKingAP) 
  
 POP 
@@ -61,8 +61,8 @@ General_U_Shield_Lance_Nuramonstand_Data:
 #incbin "dmp/General_U_Shield_Lance_Nuramonstand.dmp" 
  
 ALIGN 4 
-Knight_Lord_M_Eliwood_Sword_ISstand_Data: 
-#incbin "dmp/Knight_Lord_M_Eliwood_Sword_ISstand.dmp" 
+KnightLord_M_Sword_Pushwallstand_Data: 
+#incbin "dmp/KnightLord_M_Sword_Pushwallstand.dmp" 
  
 ALIGN 4 
 Knight_U_Lance_SALVAGEDstand_Data: 
@@ -86,8 +86,8 @@ General_U_Shield_Lance_Nuramonwalk_Data:
 #incbin "dmp/General_U_Shield_Lance_Nuramonwalk.dmp" 
  
 ALIGN 4 
-Knight_Lord_M_Eliwood_Sword_ISwalk_Data: 
-#incbin "dmp/Knight_Lord_M_Eliwood_Sword_ISwalk.dmp" 
+KnightLord_M_Sword_Pushwallwalk_Data: 
+#incbin "dmp/KnightLord_M_Sword_Pushwallwalk.dmp" 
  
 ALIGN 4 
 Knight_U_Lance_SALVAGEDwalk_Data: 

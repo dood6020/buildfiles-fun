@@ -159,6 +159,8 @@ movement. Equip: [SwordIcon] [LanceIcon] [AxeIcon] [BowIcon] [X]
 Veteran knights with great defense [N]
 and skill. Equip: [SwordIcon] [LanceIcon] [AxeIcon] [BowIcon] [X]
 
+#0x2c0
+Knight Lord [X]
 
 
 
